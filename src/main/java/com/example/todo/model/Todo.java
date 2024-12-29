@@ -1,6 +1,5 @@
 package com.example.todo.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -15,9 +14,9 @@ public class Todo {
     private String id;
     private String text;
     private boolean completed = false;
-    private Date createdAt;  // Time of creation
-    private Date expiredAt;  // Expiration time
-    private Date dueDate;    // Due date
+    private Date createdAt;
+    private Date expiredAt;
+    private Date dueDate;
 
     public Todo() {
         // Set createdAt to the current UTC time
